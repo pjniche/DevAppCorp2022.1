@@ -85,8 +85,17 @@ public class HelloServlet extends HttpServlet {
                 break;
         }
         
+        String greet = request.getParameter("greet");
+        if(greet==null)
+            greet = "";
+        switch(greet){
+            case "sr":
+                msg = msg+"Sr. ";
+            case "sra":
+                msg = msg+"Sr(a). ";
+        }
+        
         String nome = request.getParameter("nome");
-
         if(nome==null)
             nome = "Fulano";
         
@@ -145,8 +154,17 @@ public class HelloServlet extends HttpServlet {
                 break;
         }
         
+        String greet = request.getParameter("greet");
+        if(greet==null)
+            greet = "";
+        switch(greet){
+            case "sr":
+                msg = msg+"Sr. ";
+            case "sra":
+                msg = msg+"Sr(a). ";
+        }
+        
         String nome = request.getParameter("nome");
-
         if(nome==null)
             nome = "Fulano";
         
