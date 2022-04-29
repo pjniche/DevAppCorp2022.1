@@ -87,6 +87,8 @@ public class HelloServlet extends HttpServlet {
         
         String greet = request.getParameter("greet");
         switch(greet){
+            case "n":
+                break;
             case "sr":
                 msg = msg+"Sr. ";
                 break;
@@ -162,6 +164,8 @@ public class HelloServlet extends HttpServlet {
         
         String greet = request.getParameter("greet");
         switch(greet){
+            case "n":
+                break;
             case "sr":
                 msg = msg+"Sr. ";
                 break;
