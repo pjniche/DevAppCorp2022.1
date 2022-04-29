@@ -74,6 +74,15 @@ public class HelloServlet extends HttpServlet {
             case "fr":
                 msg = "Bonjour, ";
                 break;
+            case "de":
+                msg = "Hallo, ";
+                break;
+            case "es":
+                msg = "Hola, ";
+                break;
+            case "jp":
+                msg = "こんにちは, ";
+                break;
         }
         
         String nome = request.getParameter("nome");
@@ -127,6 +136,12 @@ public class HelloServlet extends HttpServlet {
                 break;
             case "de":
                 msg = "Hallo, ";
+                break;
+            case "es":
+                msg = "Hola, ";
+                break;
+            case "jp":
+                msg = "こんにちは, ";
                 break;
         }
         
