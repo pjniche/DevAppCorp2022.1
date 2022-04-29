@@ -86,6 +86,8 @@ public class HelloServlet extends HttpServlet {
         }
         
         String greet = request.getParameter("greet");
+        if(greet==null)
+            greet = "";
         switch(greet){
             case "n":
                 break;
@@ -163,6 +165,8 @@ public class HelloServlet extends HttpServlet {
         }
         
         String greet = request.getParameter("greet");
+        if(greet==null)
+            greet = "";
         switch(greet){
             case "n":
                 break;
