@@ -91,8 +91,10 @@ public class HelloServlet extends HttpServlet {
         switch(greet){
             case "sr":
                 msg = msg+"Sr. ";
+                break;
             case "sra":
                 msg = msg+"Sr(a). ";
+                break;
         }
         
         String nome = request.getParameter("nome");
