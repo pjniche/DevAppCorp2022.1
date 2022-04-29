@@ -93,6 +93,12 @@ public class HelloServlet extends HttpServlet {
             case "sra":
                 msg = msg+"Sr(a). ";
                 break;
+            case "mr":
+                msg = msg+"Mr. ";
+                break;
+            case "ms":
+                msg = msg+"Ms. ";
+                break;
         }
         
         String nome = request.getParameter("nome");
@@ -161,6 +167,12 @@ public class HelloServlet extends HttpServlet {
                 break;
             case "sra":
                 msg = msg+"Sr(a). ";
+                break;
+            case "mr":
+                msg = msg+"Mr. ";
+                break;
+            case "ms":
+                msg = msg+"Ms. ";
                 break;
         }
         
